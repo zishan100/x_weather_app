@@ -13,7 +13,7 @@ function App () {
 
   const fetchWeatherData = async(search)=>{
     try{
-      const getResponse = await fetch(`http://api.weatherapi.com/v1/current.json?key=${envVar.apiKey}&q=${search}&aqi=no`);
+      const getResponse = await fetch(`https://api.weatherapi.com/v1/current.json?key=${envVar.apiKey}&q=${search}&aqi=no`);
       
       const getData = await getResponse.json();
 
